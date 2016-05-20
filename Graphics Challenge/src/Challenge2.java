@@ -24,29 +24,30 @@ public class Challenge2 extends Canvas
     			Scanner userInput=new Scanner (System.in);
 				System.out.println("How big would you like the square to be? Please choose a number from 1 to 10. 1 is the smallest square and 10 is the largest square.");
 				int sizeOfSquare=userInput.nextInt();
-		    			
+				for(int i = 0; i < 1000; i++);
+				i=userInput.nextInt();
+				
 				
 				Scanner userInput2=new Scanner (System.in);
 				System.out.println("Would you like your square to be red or blue?" );
 				int colorOfSquare=userInput.nextInt();
-				if(choice==red)
+				userInput2 red=graphics.setColor(Color.red);
+				userInput2 blue=graphics.setColor(Color.blue);
+				if(userInput2==red)
 					{
 						graphics.setColor(Color.red);
-				        graphics.fillRect(450, 550, 100, 100);
+				        graphics.fillRect(i, i, 100, 100);
 				    }
-				else if(choice==2)
+				else if(userInput2==blue)
 					{
-					System.out.println("Hmm, I'm allergic to those.");
+						graphics.setColor(Color.blue);
+				        graphics.fillRect(i, i, 100, 100);
+				
+				
+				
+    		
+    			
 					}
-				else
-					{
-					System.out.println("It is fun to play with them!");
-					}	
-				
-				
-				
-    			
-    			
     		}
-    }
+	}
     	
